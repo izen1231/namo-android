@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:background="#003863"
+        android:layout_height="match_parent">
+
+
+
+    <TextView
+            android:textColor="#FFF"
+            android:textSize="30dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ranking" android:layout_marginTop="36dp" android:layout_marginStart="28dp"/>
+
+
+    <ImageView android:layout_width="120dp" android:layout_height="120dp"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toTopOf="parent"
+               android:src="@drawable/rd_pro" android:layout_marginStart="144dp" android:layout_marginTop="64dp"/>
+
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toTopOf="parent"
+              android:text="\@name"
+              android:textSize="15dp"
+              android:textColor="#FFFFFF"
+              android:layout_marginTop="172dp" android:layout_marginStart="180dp"/>
+
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toTopOf="parent"
+              android:text="미세먼지 량"
+              android:textSize="20dp"
+              android:textColor="#FFFFFF"
+              android:layout_marginTop="200dp" android:layout_marginStart="156dp"/>
+
+
+    <androidx.appcompat.widget.SearchView
+            android:background="@drawable/search_background"
+            android:layout_width="300dp"
+            android:layout_gravity="center"
+            android:id="@+id/search_bard"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_height="50dp" android:layout_marginStart="52dp"
+            android:layout_marginTop="270dp"/>
+
+
+    <androidx.cardview.widget.CardView
+            android:backgroundTint="#003863"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="400dp" android:layout_marginTop="340dp">
+
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/cardview_background">
+
+        </ImageView>
+        <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_marginTop="120dp"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"/>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

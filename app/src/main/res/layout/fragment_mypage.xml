@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:background="#003863"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+            android:layout_height="30dp"
+            android:layout_width="30dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/outline_notifications_white_18" android:layout_marginTop="44dp"
+            android:layout_marginStart="304dp"/>
+
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="심효근"
+            android:textColor="#FFF"
+            android:textSize="20dp"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="92dp"
+            app:layout_constraintStart_toEndOf="@+id/profile" android:id="@+id/textView"/>
+
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1일동안 성장중"
+            android:textColor="#FFF"
+            android:textSize="10dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="126dp"
+            app:layout_constraintStart_toStartOf="@+id/textView" android:id="@+id/textView2"/>
+
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="오렌지나무"
+            android:textColor="#FFF"
+            android:textSize="10dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="140dp"
+            app:layout_constraintStart_toStartOf="@+id/textView"/>
+
+    <ImageView
+            android:id="@+id/profile"
+            android:layout_width="100dp" android:layout_height="100dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/orangetree" android:layout_marginStart="40dp" android:layout_marginTop="76dp"/>
+
+    <ImageView
+            android:layout_height="30dp"
+            android:layout_width="30dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/baseline_settings_white_24"
+            android:layout_marginTop="44dp"
+            android:layout_marginStart="352dp"/>
+
+    <androidx.cardview.widget.CardView
+            android:backgroundTint="#003863"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:layout_marginTop="240dp">
+
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/cardview_background">
+
+        </ImageView>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/tabs"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content" android:layout_marginTop="16dp"
+                    android:layout_marginStart="52dp"></com.google.android.material.tabs.TabLayout>
+            <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/viewPager"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_width="match_parent"
+                    android:layout_height="450dp" android:layout_marginTop="64dp"></androidx.viewpager.widget.ViewPager>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

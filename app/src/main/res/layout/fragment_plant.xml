@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+                                             android:layout_width="match_parent"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             android:background="#003863"
+                                             android:layout_height="match_parent">
+
+
+    <TextView
+            android:textColor="#FFF"
+            android:textSize="30dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Plants" android:layout_marginTop="36dp" android:layout_marginStart="28dp"/>
+    <ImageView
+            android:layout_height="30dp"
+            android:layout_width="30dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/outline_notifications_white_18" android:layout_marginTop="44dp"
+            android:layout_marginStart="304dp"/>
+
+
+    <ImageView
+            android:layout_height="30dp"
+            android:layout_width="30dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/baseline_settings_white_24"
+            android:layout_marginTop="44dp"
+            android:layout_marginStart="352dp"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fab"
+            android:backgroundTint="#82d1bf"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="572dp" android:layout_marginStart="332dp"/>
+
+    <androidx.cardview.widget.CardView
+            android:backgroundTint="#003863"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="600dp" android:layout_marginTop="180dp">
+
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/cardview_background">
+
+        </ImageView>
+        <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_marginTop="40dp"
+                android:layout_width="360dp"
+                android:layout_marginLeft="20dp"
+                android:layout_height="400dp"/>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
